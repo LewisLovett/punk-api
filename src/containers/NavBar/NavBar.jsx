@@ -1,8 +1,14 @@
-import "/.NavBar.scss"
-
+import "./NavBar.scss";
+import SearchBox from "../../components/SearchBox/SearchBox"
+import FiltersList from "../FiltersList/FiltersList"
 const NavBar = () =>{
-//     <SearchBar/>
-// <FilterList/>
+
+    return(
+    <>
+        <SearchBox/>
+        <FiltersList/>
+    </>
+    )
 }
 
 export default NavBar;
