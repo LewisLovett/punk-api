@@ -3,7 +3,7 @@ import "./SearchBox.scss";
 const SearchBox = () => {
     return(
         <>
-        
+        <input type="text"></input>
         </>
     )
 }

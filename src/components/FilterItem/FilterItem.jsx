@@ -1,9 +1,11 @@
 import "./FilterItem.scss";
 
-const FilterItem = () => {
+const FilterItem = (props) => {
+    const {filterName} = props;
     return(
         <>
-        
+        <label>{filterName}</label>
+        <input type="checkbox" />
         </>
     )
 }

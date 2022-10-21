@@ -1,11 +1,16 @@
 import "./FiltersList.scss";
 import FilterItem from "../../components/FilterItem/FilterItem";
 
-const FiltersList = () =>{
+const FiltersList = (props) =>{
+    const {filterListArry} = props;
+    const filterItems = filterListArry.map((filterItem,index) =>{
+        return <FilterItem filterName={filterItem.name} key={index}/>
+    })
+
     return(
         <>
-        <FilterItem/>
+        {filterItems}
         </>
     )
 }
-export default FilterItem;
+export default FiltersList;
