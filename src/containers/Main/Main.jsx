@@ -1,10 +1,11 @@
 import './Main.scss';
 import CardList from "../CardList/CardList";
 
-const Main = () => {
+const Main = (props) => {
+    const {beerArry} = props;
     return(
         <>
-        <CardList />
+        <CardList beerArry={beerArry} />
         </>
     )
 }
