@@ -21,9 +21,19 @@ function App() {
       beerList.filter(beer => beer.abv>6)
     )
   }
-  const filterListArry = [{"name":"High ABV (>6.0%)", "beer_key": "abv", "beer_value" : 6, "filter_function" : handleHighABVFilter},
-  {"name":"Classic Range", "beer_key": "first_brewed", "beer_value" : "2010","filter_function" : handleHighABVFilter},
-  {"name":"Acidic", "beer_key": "ph", "beer_value" : 4,"filter_function" : handleHighABVFilter}
+  const handleClassicRangeFilter = () => {
+    setBeerList(
+      beerList.filter(beer => parseInt(beer.first_brewed.substring(3))<2010)
+    )
+  }
+  const handleAcidicFilter = () => {
+    setBeerList(
+      beerList.filter(beer => beer.ph<4)
+    )
+  }
+  const filterListArry = [{"name":"High ABV (>6.0%)", "filter_function" : handleHighABVFilter},
+  {"name":"Classic Range", "filter_function" : handleClassicRangeFilter},
+  {"name":"Acidic", "filter_function" : handleAcidicFilter}
 ];
   return (
     <div className="App">
