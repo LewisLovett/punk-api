@@ -13,14 +13,14 @@ function App() {
   ];
 
   const handleSearch = event => {
-    const searchTerm = event.target.value;
+    const searchTerm = event.target.value.toLowerCase();
     setBeerList(
-      beers.filter(beer => beer.name.includes(searchTerm))
+      beers.filter(beer => beer.name.toLowerCase().includes(searchTerm))
     )
   }
   return (
     <div className="App">
-      <NavBar filterListArry={filterListArry} />
+      <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
       <Main beerArry={beerList} />
     </div>
   );

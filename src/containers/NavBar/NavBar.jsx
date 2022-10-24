@@ -2,10 +2,10 @@ import "./NavBar.scss";
 import SearchBox from "../../components/SearchBox/SearchBox"
 import FiltersList from "../FiltersList/FiltersList"
 const NavBar = (props) =>{
-const {filterListArry} = props;
+const {filterListArry, handleSearch} = props;
     return(
     <>
-        <SearchBox/>
+        <SearchBox handleSearch={handleSearch}/>
         <FiltersList filterListArry={filterListArry}/>
     </>
     )

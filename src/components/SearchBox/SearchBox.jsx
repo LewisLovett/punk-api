@@ -1,9 +1,10 @@
 import "./SearchBox.scss";
 
-const SearchBox = () => {
+const SearchBox = (props) => {
+    const { handleSearch} = props;
     return(
         <>
-        <input type="text"></input>
+        <input onInput={handleSearch} type="text"></input>
         </>
     )
 }
