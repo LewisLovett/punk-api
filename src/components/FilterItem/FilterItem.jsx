@@ -1,11 +1,11 @@
 import "./FilterItem.scss";
 
 const FilterItem = (props) => {
-    const {filterName} = props;
+    const {filterName,filterFunction} = props;
     return(
         <>
         <label>{filterName}</label>
-        <input type="checkbox" />
+        <input onChange={filterFunction} type="checkbox" />
         </>
     )
 }
