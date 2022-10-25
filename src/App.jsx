@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import beers from "./data/beers";
 import NavBar from './containers/NavBar/NavBar';
 import Main from "./containers/Main/Main";
@@ -62,6 +62,7 @@ useEffect(() => {
 ];
   return (
     <div className="App">
+      <h1>Punk Beer Search</h1>
       <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
       <Main beerArry={beerList} />
     </div>
