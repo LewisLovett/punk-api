@@ -9,5 +9,4 @@ const FilterItem = (props) => {
         </>
     )
 }
-
 export default FilterItem;
