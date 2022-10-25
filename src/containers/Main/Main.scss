@@ -1,0 +1,6 @@
+@use "../../styles/variables" as *;
+
+.card-list-container{
+    background-color: $primary-color;
+    color: $tertiary-color
+}

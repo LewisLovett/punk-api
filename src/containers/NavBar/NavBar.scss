@@ -1,0 +1,6 @@
+@use "../../styles/variables" as *;
+
+.navbar-container{
+    background-color: $tertiary-color;
+    color: $primary-color;
+}
