@@ -24,11 +24,6 @@ const getBeers = async () => {
 
   const handleSearch = event => {
     setcurrentSearchTerm(event.target.value.toLowerCase());
-    if(currentSearchTerm){
-      setBeerList(beerList.filter(beer => beer.name.toLowerCase().includes(currentSearchTerm))
-    )}else{
-      setBeerList(fullBeerList)
-    }
   }
 
   useEffect(() =>{
@@ -37,6 +32,10 @@ const getBeers = async () => {
 
   useEffect(() => {
     let tempBeerList = fullBeerList;
+    
+    if(currentSearchTerm){
+      tempBeerList = tempBeerList.filter(beer => beer.name.toLowerCase().includes(currentSearchTerm)
+    )}
       if(isHighABVFilter){
         tempBeerList = tempBeerList.filter(beer => beer.abv>6);
       }
@@ -47,7 +46,7 @@ const getBeers = async () => {
         tempBeerList = tempBeerList.filter(beer => beer.ph<4);
       }
       setBeerList(tempBeerList);
-  }, [isHighABVFilter, isClassicRangeFilter,isAcidicFilter]);
+  }, [isHighABVFilter, isClassicRangeFilter,isAcidicFilter, currentSearchTerm]);
 
 
   const handleHighABVFilter = () => {
