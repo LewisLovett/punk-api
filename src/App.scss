@@ -1,8 +1,30 @@
 @use "./styles/variables" as *;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .App{
-    display: flex;
-    flex-direction: column;
+
     background-color: $quaternary-color;
     color: $primary-color;
+    text-align: center;
+}
+
+.App h1{
+    padding: 10px;
+}
+body{
+    background-color: $primary-color;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) { 
+    .main-container{
+        flex-direction: row;
+    }
 }

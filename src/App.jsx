@@ -50,15 +50,15 @@ const getBeers = async () => {
 
 
   const handleHighABVFilter = () => {
-    setIsHighABVFilter(isHighABVFilter =>!isHighABVFilter);
+    setIsHighABVFilter(!isHighABVFilter);
   }
 
   const handleClassicRangeFilter = () => {
-    setIsClassicRangeFilter(isClassicRangeFilter =>!isClassicRangeFilter);
+    setIsClassicRangeFilter(!isClassicRangeFilter);
   }
 
   const handleAcidicFilter = () => {
-    setIsAcidicFilter(isAcidicFilter => !isAcidicFilter);
+    setIsAcidicFilter(!isAcidicFilter);
   }
 
   const filterListArry = [{"name":"High ABV (>6.0%)", "filter_function" : handleHighABVFilter},
@@ -68,8 +68,10 @@ const getBeers = async () => {
   return (
     <div className="App">
       <h1>Punk Beer Search</h1>
+      <div className="main-container">
       <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
       <Main beerArry={beerList} />
+      </div>
     </div>
   
   );

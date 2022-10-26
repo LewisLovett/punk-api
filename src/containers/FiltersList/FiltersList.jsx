@@ -9,6 +9,7 @@ const FiltersList = (props) =>{
 
     return(
         <>
+        <h2>Filter Options</h2>
         {filterItems}
         </>
     )

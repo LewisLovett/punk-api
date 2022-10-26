@@ -3,4 +3,13 @@
 .navbar-container{
     background-color: $tertiary-color;
     color: $primary-color;
+    padding: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) { 
+    .navbar-container{
+        width: 30%;
+        min-height: 100vh;
+    }
 }

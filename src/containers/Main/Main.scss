@@ -2,5 +2,15 @@
 
 .card-list-container{
     background-color: $primary-color;
-    color: $tertiary-color
+    color: $tertiary-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) { 
+    .card-list-container{
+        width: 70%;
+    }
 }
