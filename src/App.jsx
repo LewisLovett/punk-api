@@ -62,8 +62,8 @@ const getBeers = async () => {
   }
 
   const filterListArry = [{"name":"High ABV (>6.0%)", "filter_function" : handleHighABVFilter},
-  {"name":"Classic Range", "filter_function" : handleClassicRangeFilter},
-  {"name":"Acidic", "filter_function" : handleAcidicFilter}
+  {"name":"Classic Range (Before 2010)", "filter_function" : handleClassicRangeFilter},
+  {"name":"High Acidity (ph < 4)", "filter_function" : handleAcidicFilter}
 ];
   return (
     <div className="App">
