@@ -12,7 +12,7 @@ it('renders title', () => {
 
 it('renders acidic filters', () => {
   render(<App />);
-  const filter = screen.queryByText(/acidic/i)
+  const filter = screen.queryByText(/acidity/i)
   expect(filter).toBeTruthy();
 });
 
