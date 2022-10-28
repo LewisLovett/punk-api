@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+
+.filter-container__filter-label{
+    padding: 10px;
+}
+
+.filter-container__filter-checkbox{
+    background-color: $secondary-color;
+}

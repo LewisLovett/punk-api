@@ -5,15 +5,11 @@
     box-sizing: border-box;
 }
 .App{
-
-    background-color: $quaternary-color;
-    color: $primary-color;
     text-align: center;
+   
 }
 
-.App h1{
-    padding: 10px;
-}
+
 body{
     background-color: $primary-color;
 }
@@ -22,8 +18,28 @@ body{
     display: flex;
     flex-direction: column;
 }
+.parrallax{
+    background-image: url("../src//assets/images/bar.jpeg");
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+  justify-content: center;
+  align-items: center;
+}
 
-@media only screen and (min-width: 600px) { 
+.title{
+    background-color: rgb(146, 129, 122,0.7);
+    color: $tertiary-color;
+    padding: 40px 20vw;
+    font-size: 2em;
+    
+}
+
+@media only screen and (min-width: 810px) { 
     .main-container{
         flex-direction: row;
     }

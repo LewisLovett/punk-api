@@ -1,0 +1,8 @@
+@use "../../styles/variables" as *;
+
+.navbar-container__search-box{
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 5px 15px;
+    font-size: 1.2em;
+}

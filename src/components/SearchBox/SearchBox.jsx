@@ -5,7 +5,7 @@ const SearchBox = (props) => {
     return(
         <>
         <h2>Search:</h2>
-        <input onInput={handleSearch} type="text"></input>
+        <input className="navbar-container__search-box" onInput={handleSearch} type="text"></input>
         </>
     )
 }

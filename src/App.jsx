@@ -67,11 +67,15 @@ const getBeers = async () => {
 ];
   return (
     <div className="App">
-      <h1>Punk Beer Search</h1>
-      <div className="main-container">
+      
+      <section className='parrallax'><div>
+      <h1 className='title'>Punk Beer Search</h1>
+      </div>
+      </section>
+      <section className="main-container">
       <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
       <Main beerArry={beerList} />
-      </div>
+      </section>
     </div>
   
   );
