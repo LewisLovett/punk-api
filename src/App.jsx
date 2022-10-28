@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import NavBar from './containers/NavBar/NavBar';
 import Main from "./containers/Main/Main";
@@ -68,13 +67,14 @@ const getBeers = async () => {
   return (
     <div className="App">
       
-      <section className='parrallax'><div>
-      <h1 className='title'>Punk Beer Search</h1>
-      </div>
+      <section className='parrallax'>
+        <div>
+          <h1 className='title'>Punk Beer Search</h1>
+        </div>
       </section>
       <section className="main-container">
-      <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
-      <Main beerArry={beerList} />
+        <NavBar filterListArry={filterListArry} handleSearch={handleSearch}/>
+        <Main beerArry={beerList} />
       </section>
     </div>
   
